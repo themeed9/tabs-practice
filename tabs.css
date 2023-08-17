@@ -25,3 +25,77 @@ body{
 header{
     position: relative;
 }
+.tab-content{
+    display: none;
+}
+.tab-content--active{
+    display: block;
+}
+.tabs{
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #f0f0f0;
+}
+.tabs > a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gray-mid);
+    text-align: left;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.tabs > a img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.tabs > .active {
+    font-weight: 700;
+    outline: none;
+    color: var(--gray-dark);
+    margin-bottom: 0.0625rem;
+    border-bottom: 0.0625rem solid var(--gray-dark);
+}
+.tab > a > svg {
+    stroke: var(--gray-mid);
+}
+.tab > .active > svg {
+    stroke: var(--gray-dark);
+}
+.record{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 0.75rem;
+    border-color: 1px solid #f0f0f0;
+    padding: 1rem 0.75rem;
+}
+.record:hover, .record:focus{
+    background-color: var(--gray-hover);
+    outline: none;
+    cursor: pointer;
+}
+.record:hover .avatar_Wrapper{
+    background-color: #e5e5e5;
+}
+.record .avatar {
+    display: block;
+    border-radius: 0.5rem;
+    flex-grow: 0;
+    object-fit:cover;
+}
+.avatar--user{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.avatar--file{
+    width: 1.5rem;
+    height: 1,5rem;
+}
